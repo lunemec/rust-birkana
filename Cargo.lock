@@ -1,0 +1,12 @@
+[root]
+name = "rust-birkana"
+version = "0.1.0"
+dependencies = [
+ "svg 0.5.3 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "svg"
+version = "0.5.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
