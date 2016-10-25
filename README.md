@@ -9,7 +9,9 @@ The code is not that nice, I just wanted a working version.
     echo "0123456789abcdef" | rust-birkana > target.svg
 
 This results in this kind of SVG image:
+
 ![birkana alphabet](https://lunemec.github.io/rust-birkana/svg/alphabet.svg)
 
 This is a image of my name encoded in UTF-8 and represented as HEX:
+
 ![my name](https://lunemec.github.io/rust-birkana/svg/myname.svg)
