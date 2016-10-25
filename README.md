@@ -10,7 +10,7 @@ The code is not that nice, I just wanted a working version.
 
 This results in this kind of SVG image:
 
-![birkana alphabet](https://lunemec.github.io/rust-birkana/svg/alphabet.svg)
+<img src="https://lunemec.github.io/rust-birkana/svg/alphabet.svg" width="1000">
 
 This is a image of my name encoded in UTF-8 and represented as HEX:
 
