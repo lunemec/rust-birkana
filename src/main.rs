@@ -21,7 +21,7 @@ fn create_document_from_string(input: String, spacing: i32) -> svg::node::elemen
     let mut position = 0;
     let mut document = Document::new();
 
-    for character in String::from(input).to_uppercase().chars() {
+    for character in input.to_uppercase().chars() {
         let data = match character {
             '0' => letters::create_0_data(spacing, position),
             '1' => letters::create_1_data(spacing, position),
@@ -44,6 +44,7 @@ fn create_document_from_string(input: String, spacing: i32) -> svg::node::elemen
         document = document.add(create_path(data));
         position += 1;
     }
+    document = document.set("viewBox", (0, 0, 50 * input.chars().count(), 100));
     return document;
 }
 
