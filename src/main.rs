@@ -44,7 +44,7 @@ fn create_document_from_string(input: String, spacing: i32) -> svg::node::elemen
         document = document.add(create_path(data));
         position += 1;
     }
-    document = document.set("viewBox", (0, 0, 50 * input.chars().count(), 100));
+    document = document.set("viewBox", (0, 0, 40 * input.chars().count(), 120));
     return document;
 }
 
