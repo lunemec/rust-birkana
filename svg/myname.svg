@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+<path d="M10,10 l0,100 M10,60 l25,25 z" fill="none" stroke="black" stroke-width="1"/>
+<path d="M50,10 l0,100 M50,60 l25,25 M75,85 l-25,25 z" fill="none" stroke="black" stroke-width="1"/>
+<path d="M90,10 l0,100 M90,10 l25,25 M115,35 l-25,25 M90,60 l25,25 z" fill="none" stroke="black" stroke-width="1"/>
+<path d="M130,10 l0,100 M130,10 l25,25 M130,60 l25,25 z" fill="none" stroke="black" stroke-width="1"/>
+<path d="M170,10 l0,100 M195,35 l-25,25 M170,60 l25,25 z" fill="none" stroke="black" stroke-width="1"/>
+<path d="M210,10 l0,100 M210,10 l25,25 M235,35 l-25,25 M235,85 l-25,25 z" fill="none" stroke="black" stroke-width="1"/>
+<path d="M250,10 l0,100 M250,60 l25,25 M275,85 l-25,25 z" fill="none" stroke="black" stroke-width="1"/>
+<path d="M290,10 l0,100 M290,10 l25,25 M315,35 l-25,25 z" fill="none" stroke="black" stroke-width="1"/>
+<path d="M330,10 l0,100 M355,35 l-25,25 M355,85 l-25,25 z" fill="none" stroke="black" stroke-width="1"/>
+<path d="M370,10 l0,100 M370,10 l25,25 z" fill="none" stroke="black" stroke-width="1"/>
+<path d="M410,10 l0,100 M410,60 l25,25 M435,85 l-25,25 z" fill="none" stroke="black" stroke-width="1"/>
+<path d="M450,10 l0,100 M450,10 l25,25 M450,60 l25,25 z" fill="none" stroke="black" stroke-width="1"/>
+<path d="M490,10 l0,100 M515,35 l-25,25 M515,85 l-25,25 z" fill="none" stroke="black" stroke-width="1"/>
+<path d="M530,10 l0,100 M530,10 l25,25 z" fill="none" stroke="black" stroke-width="1"/>
+<path d="M570,10 l0,100 M595,35 l-25,25 z" fill="none" stroke="black" stroke-width="1"/>
+<path d="M610,10 l0,100 z" fill="none" stroke="black" stroke-width="1"/>
+<path d="M650,10 l0,100 M650,60 l25,25 z" fill="none" stroke="black" stroke-width="1"/>
+<path d="M690,10 l0,100 M715,35 l-25,25 M690,60 l25,25 M715,85 l-25,25 z" fill="none" stroke="black" stroke-width="1"/>
+<path d="M730,10 l0,100 M730,60 l25,25 M755,85 l-25,25 z" fill="none" stroke="black" stroke-width="1"/>
+<path d="M770,10 l0,100 M770,60 l25,25 z" fill="none" stroke="black" stroke-width="1"/>
+<path d="M810,10 l0,100 M810,10 l25,25 M835,85 l-25,25 z" fill="none" stroke="black" stroke-width="1"/>
+<path d="M850,10 l0,100 M850,10 l25,25 M875,35 l-25,25 M875,85 l-25,25 z" fill="none" stroke="black" stroke-width="1"/>
+<path d="M890,10 l0,100 M915,35 l-25,25 M890,60 l25,25 z" fill="none" stroke="black" stroke-width="1"/>
+<path d="M930,10 l0,100 M930,10 l25,25 M930,60 l25,25 M955,85 l-25,25 z" fill="none" stroke="black" stroke-width="1"/>
+<path d="M970,10 l0,100 M995,35 l-25,25 M970,60 l25,25 z" fill="none" stroke="black" stroke-width="1"/>
+<path d="M1010,10 l0,100 M1010,10 l25,25 M1010,60 l25,25 z" fill="none" stroke="black" stroke-width="1"/>
+<path d="M1050,10 l0,100 M1075,35 l-25,25 M1050,60 l25,25 z" fill="none" stroke="black" stroke-width="1"/>
+<path d="M1090,10 l0,100 M1090,10 l25,25 M1115,35 l-25,25 z" fill="none" stroke="black" stroke-width="1"/>
+</svg>
