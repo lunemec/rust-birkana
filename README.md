@@ -14,4 +14,4 @@ This results in this kind of SVG image:
 
 This is a image of my name encoded in UTF-8 and represented as HEX:
 
-<img src="https://lunemec.github.io/rust-birkana/svg/myname.svg" width="500">
+<img src="https://lunemec.github.io/rust-birkana/svg/myname.svg" width="1000">
