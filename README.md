@@ -1,6 +1,7 @@
 # rust-birkana
 [![Crates.io]
 (https://img.shields.io/crates/v/rust-birkana.svg)](https://crates.io/crates/rust-birkana)
+
 Birkana SVG generator.
 
 Recently I read [this awesome article](https://yawar.blogspot.cz/2016/10/the-birkana-hexadecimal-number-symbols.html) about representing hexadecimal numbers using runic system. So I created this little program that takes hexadecimal string on `stdin` and spits out SVG data on `stdout`.
