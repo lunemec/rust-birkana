@@ -7,7 +7,8 @@ Birkana SVG generator.
 Recently I read [this awesome article](https://yawar.blogspot.cz/2016/10/the-birkana-hexadecimal-number-symbols.html) about representing hexadecimal numbers using runic system. So I created this little program that takes hexadecimal string on `stdin` and spits out SVG data on `stdout`.
 The code is not that nice, I just wanted a working version.
 
-To get the latest version of binary, you can download **macos** and **linux** binaries from releases. Windows binary will be available soon. For other platforms you can build the project as described in `build` section.
+## Download:
+You can download binary versions for most common platforms from releases section.
 
 ## Build:
 Since cross-compilation is not in very much working state right now, you'll have to build the binary yourselves.
