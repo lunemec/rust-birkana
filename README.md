@@ -13,11 +13,12 @@ Since cross-compilation is not in very much working state right now, you'll have
 Steps:
 * **install rust**.
 * git clone https://github.com/lunemec/rust-birkana
-
+```
     cd rust-birkana
     cargo build --release
     mv target/release/rust-birkana .
-    
+```
+
 Now you should be able use the program as described in `usage` section.
 
 ## Usage:
