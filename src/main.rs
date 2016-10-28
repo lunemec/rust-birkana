@@ -3,69 +3,63 @@ extern crate svg;
 use std::io::{self, Read, Write};
 
 use svg::Document;
-use svg::node::element::Path;
 
-mod letters;
+mod rune;
+use rune::{Rune, RuneData};
 
-
-fn create_path(data: svg::node::element::path::Data) -> svg::node::element::Path {
-    let path = Path::new()
-                .set("fill", "none")
-                .set("stroke", "black")
-                .set("stroke-width", 1)
-                .set("d", data);
-    return path;
-}
-
-fn create_document_from_string(input: String, spacing: i32) -> svg::node::element::SVG {
+fn create_document_from_string(input: String) -> svg::node::element::SVG {
     let mut position = 0;
     let mut document = Document::new();
 
     for character in input.to_uppercase().chars() {
-        let data = match character {
-            '0' => letters::create_0_data(spacing, position),
-            '1' => letters::create_1_data(spacing, position),
-            '2' => letters::create_2_data(spacing, position),
-            '3' => letters::create_3_data(spacing, position),
-            '4' => letters::create_4_data(spacing, position),
-            '5' => letters::create_5_data(spacing, position),
-            '6' => letters::create_6_data(spacing, position),
-            '7' => letters::create_7_data(spacing, position),
-            '8' => letters::create_8_data(spacing, position),
-            '9' => letters::create_9_data(spacing, position),
-            'A' => letters::create_a_data(spacing, position),
-            'B' => letters::create_b_data(spacing, position),
-            'C' => letters::create_c_data(spacing, position),
-            'D' => letters::create_d_data(spacing, position),
-            'E' => letters::create_e_data(spacing, position),
-            'F' => letters::create_f_data(spacing, position),
+        let mut x_start = 0;
+        // First letter will start 5 units from the left image border.
+        if position == 0 {
+            x_start = 10;
+        } 
+        let path = match character {
+            '0' => Rune::from_data(RuneData::new(position, x_start).x0().close()).to_path(),
+            '1' => Rune::from_data(RuneData::new(position, x_start).x0().x1().close()).to_path(),
+            '2' => Rune::from_data(RuneData::new(position, x_start).x0().x2().close()).to_path(),
+            '3' => Rune::from_data(RuneData::new(position, x_start).x0().x1().x2().close()).to_path(),
+            '4' => Rune::from_data(RuneData::new(position, x_start).x0().x4().close()).to_path(),
+            '5' => Rune::from_data(RuneData::new(position, x_start).x0().x1().x4().close()).to_path(),
+            '6' => Rune::from_data(RuneData::new(position, x_start).x0().x2().x4().close()).to_path(),
+            '7' => Rune::from_data(RuneData::new(position, x_start).x0().x1().x2().x4().close()).to_path(),
+            '8' => Rune::from_data(RuneData::new(position, x_start).x0().x8().close()).to_path(),
+            '9' => Rune::from_data(RuneData::new(position, x_start).x0().x1().x8().close()).to_path(),
+            'A' => Rune::from_data(RuneData::new(position, x_start).x0().x2().x8().close()).to_path(),
+            'B' => Rune::from_data(RuneData::new(position, x_start).x0().x1().x2().x8().close()).to_path(),
+            'C' => Rune::from_data(RuneData::new(position, x_start).x0().x4().x8().close()).to_path(),
+            'D' => Rune::from_data(RuneData::new(position, x_start).x0().x1().x4().x8().close()).to_path(),
+            'E' => Rune::from_data(RuneData::new(position, x_start).x0().x2().x4().x8().close()).to_path(),
+            'F' => Rune::from_data(RuneData::new(position, x_start).x0().x1().x2().x4().x8().close()).to_path(),
             _ => continue,
         };
-        document = document.add(create_path(data));
+        document = document.add(path);
         position += 1;
     }
-    document = document.set("viewBox", (0, 0, 40 * input.chars().count(), 120));
+    document = document.set("viewBox", (0, 0, 35 * input.chars().count(), 120));
     return document;
 }
 
 fn main() {
-    let spacing = 40;
     let mut buffer = String::new();
-    
+
     match io::stdin().read_to_string(&mut buffer) {
-        Ok(_) => {},
+        Ok(_) => {}
         Err(e) => {
             println!("error reading from stdin: {:?}", e);
             return;
         }
     }
-    let document = create_document_from_string(buffer, spacing);
-    
+    let document = create_document_from_string(buffer);
+
     match io::stdout().write(&document.to_string().into_bytes()) {
-        Ok(_) => {},
+        Ok(_) => {}
         Err(e) => {
             println!("error writing to stdout: {:?}", e);
             return;
-        },
+        }
     }
 }
