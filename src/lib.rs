@@ -38,6 +38,6 @@ pub fn document_from_string(input: String) -> svg::node::element::SVG {
         document = document.add(path);
         position += 1;
     }
-    document = document.set("viewBox", (0, 0, 35 * input.chars().count(), 120));
+    document = document.set("viewBox", (0, 0, 40 * input.chars().count(), 120));
     return document;
 }

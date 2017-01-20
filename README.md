@@ -50,6 +50,6 @@ extern crate rust_birkana;
 use rust_birkana::document_from_string;
 
 
-let document = document_from_string(my_string);
+let document = document_from_string(hex_string);
 let svg_string = document.to_string();
 ```
