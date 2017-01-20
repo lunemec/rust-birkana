@@ -41,7 +41,7 @@ This is a image of my name encoded in UTF-8 and represented as HEX:
 In your Cargo.toml add:
 
     [dependencies]
-    rust_birkana = "1.1"
+    rust-birkana = "1.1"
 
 And use it like this:
 ```rust
