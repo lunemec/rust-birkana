@@ -36,3 +36,20 @@ This results in this kind of SVG image:
 This is a image of my name encoded in UTF-8 and represented as HEX:
 
 <img src="https://lunemec.github.io/rust-birkana/svg/myname.svg" width="100%">
+
+## You can now use this crate as a module:
+In your Cargo.toml add:
+
+    [dependencies]
+    rust_birkana = "1.1"
+
+And use it like this:
+```rust
+extern crate rust_birkana;
+
+use rust_birkana::document_from_string;
+
+
+let document = document_from_string(my_string);
+let svg_string = document.to_string();
+```

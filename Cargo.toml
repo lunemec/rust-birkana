@@ -1,6 +1,6 @@
 [package]
 name = "rust-birkana"
-version = "1.0.0"
+version = "1.1.0"
 authors = ["Nemec Lukas <lu.nemec@gmail.com>"]
 description = "Creates Birkana rune symbols SVG representation of given hexadecimal number."
 homepage = "https://github.com/lunemec/rust-birkana"
