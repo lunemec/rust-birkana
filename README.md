@@ -1,6 +1,5 @@
 # rust-birkana
-[![Crates.io]
-(https://img.shields.io/crates/v/rust-birkana.svg)](https://crates.io/crates/rust-birkana)
+[![Crates.io](https://img.shields.io/crates/v/rust-birkana.svg)](https://crates.io/crates/rust-birkana)
 
 Birkana SVG generator.
 
