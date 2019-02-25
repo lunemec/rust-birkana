@@ -1,5 +1,3 @@
-extern crate rust_birkana;
-
 use std::io::{self, Read, Write};
 use rust_birkana::document_from_string;
 

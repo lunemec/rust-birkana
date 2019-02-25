@@ -1,5 +1,3 @@
-extern crate svg;
-
 use svg::node::element::Path;
 use svg::node::element::path::Data;
 

@@ -1,5 +1,3 @@
-extern crate svg;
-
 use svg::Document;
 
 pub mod rune;

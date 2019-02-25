@@ -9,4 +9,4 @@ target
 .profile
 .bash_history
 .cargo
-
+.DS_Store
