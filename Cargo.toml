@@ -10,7 +10,7 @@ homepage = "https://github.com/lunemec/rust-birkana"
 repository = "https://github.com/lunemec/rust-birkana"
 readme = "README.md"
 keywords = ["birkana", "svg"]
-license = "Unlicense"
+license = "BSD-3-Clause"
 
 [dependencies]
 svg = "0.5.12"
